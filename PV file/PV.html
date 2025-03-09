@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Present Value Calculator</title>
+    <link rel="stylesheet" href="/PV file/pv.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Present Value Calculator</h1>
+    </header>
+
+    <button class="go-home" onclick="goHome()"><i>&#8592;</i> Home</button>
+
+    <div class="form-container">
+      <label for="futureValue">Future Value (FV):</label>
+      <input
+        type="number"
+        id="futureValue"
+        placeholder="Enter future value (Tk.)"
+      />
+
+      <label for="rate">Annual Interest Rate (r%):</label>
+      <input
+        type="number"
+        id="rate"
+        placeholder="Enter annual rate (e.g., 5 for 5%)"
+      />
+
+      <label for="time">Time Period (t in years):</label>
+      <input type="number" id="time" placeholder="Enter time in years" />
+
+      <!-- Toggle Mode -->
+      <div class="toggle-container">
+        <label for="toggleMode" class="toggle-label"
+          >Use Multiple Compounding:</label
+        >
+        <input type="checkbox" id="toggleMode" />
+      </div>
+
+      <!-- Input for 'm' (compounding periods per year) -->
+      <div class="compounding-input" id="compoundingInput">
+        <label for="mValue">Compounding Periods (m):</label>
+        <input
+          type="number"
+          id="mValue"
+          placeholder="Enter m value (e.g., 12 for monthly)"
+        />
+      </div>
+
+      <button id="clcBtn">Calculate Present Value</button>
+
+      <div class="result" id="result"></div>
+    </div>
+
+    <script src="/PV file/pv.js"></script>
+  </body>
+</html>
