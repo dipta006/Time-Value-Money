@@ -148,6 +148,7 @@ header h1 {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  background-color: var(--accent-color);
 }
 
 .compounding-input input {

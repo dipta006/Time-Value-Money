@@ -35,12 +35,8 @@ clcBtn.addEventListener("click", () => {
 });
 
 toggleMode.addEventListener("change", () => {
-  if (toggleMode.checked) {
-    compoundingInput.style.display = "block"; // Show the input field
-  } else {
-    compoundingInput.style.display = "none"; // Hide the input field
-  }
-});
+  compoundingInput.style.display = toggleMode.checked ? "block" : "none";
+})
 
 function goHome() {
   setTimeout(() => {
