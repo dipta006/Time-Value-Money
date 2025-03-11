@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAR Calculator</title>
+    <link rel="stylesheet" href="ear.css">
+</head>
+<body>
+    <header>
+        <h1>Effective Annual Rate (EAR) Calculator</h1>
+    </header>
+
+    <button class="go-home" onclick="goHome()">
+        <i>&#8592;</i> Home
+    </button>
+    
+    <div class="calculator-container">
+        <label for="nominalRate">Nominal Interest Rate (r %):</label>
+        <input type="number" id="nominalRate" placeholder="Enter nominal rate (e.g., 5 for 5%)">
+
+        <label for="compoundingPeriods">Compounding Periods per Year (m):</label>
+        <select id="compoundingPeriods">
+            <option value="1">Annually (m = 1)</option>
+            <option value="2">Half Yearly (m = 2)</option>
+            <option value="4">Quarterly (m = 4)</option>
+            <option value="3">After 4 months (m = 3)</option>
+            <option value="12">Monthly (m = 12)</option>
+            <option value="52">Weekly (m = 52)</option>
+            <option value="365">Daily (m = 365)</option>
+        </select>
+
+        <button id="calculateEAR">Calculate EAR</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="ear.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- <open>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAR Calculator</title>
+    <link rel="stylesheet" href="ear.css">
+</head>
+<body>
+    <button id="themeToggle">Toggle Theme</button>
+    <div class="container">
+        <h1>Effective Annual Rate (EAR) Calculator</h1>
+        <label for="nominalRate">Nominal Interest Rate (%):</label>
+        <input type="number" id="nominalRate" placeholder="Enter nominal rate" required>
+        
+        <label for="compounding">Compounding Period:</label>
+        <select id="compounding">
+            <option value="1">Annually</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+            <option value="365">Daily</option>
+        </select>
+        
+        <button id="calculateBtn">Calculate EAR</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="ear.js"></script>
+</body>
+</html>
+</open> -->
