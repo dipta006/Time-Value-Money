@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rule of 72 Calculator</title>
+    <link rel="stylesheet" href="rule72.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rule of 72 Calculator</h1>
+      <button class="go-home" onclick="goHome()"><i>&#8592;</i> Home</button>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="container">
+      <label for="interestRate">Annual Interest Rate (%):</label>
+      <input
+        type="number"
+        id="interestRate"
+        placeholder="Enter rate (e.g., 6 for 6%)"
+      />
+      <button id="calculateBtn">Calculate</button>
+      <div id="result-rate"></div>
+
+      <p>or</p>
+      
+      <label for="time">Total Time (n):</label>
+      <input type="number" id="time" placeholder="Enter Year (e.g., 6 for 6yr)" />
+      <button id="calculateBtn-time">Calculate</button>
+      <div id="result-time"></div>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Your Website</p>
+    </footer>
+
+    <script src="rule72.js"></script>
+  </body>
+</html>
